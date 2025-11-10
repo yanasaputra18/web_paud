@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <main class="hero-section justify-content-between">
-      <div class="hero-content mt-5">
+      <div class="hero-content">
         <h1 class="main-title">
-          SMK Negeri <span class="highlight">Makassar</span>
+          TK <span class="highlight">Mandiri</span> Tunggal Jaya
         </h1>
 
         <p class="description">
@@ -13,17 +13,15 @@
         </p>
 
         <div class="action-buttons">
-          <a href="#" class="btn primary">Get Started ></a>
-          <a href="#" class="btn secondary">Video ></a>
+          <a href="#" class="btn secondary">Video Anak-Anak</a>
         </div>
 
         <div class="social-media">
-          <p>We are in Socials Media :</p>
+          <p>Follow Sosial Media Kami :</p>
           <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
       </div>
@@ -76,6 +74,7 @@ body {
   flex: 1; /* Mengambil setengah lebar */
   max-width: 600px;
   padding-left: 20px;
+  margin-top: 3rem;
 }
 
 .main-title {
@@ -138,12 +137,15 @@ body {
 /* Media Sosial */
 .social-media {
   margin-top: 50px;
+  display: flex;
 }
 
 .social-media p {
   font-weight: 500;
   color: #333;
   margin-bottom: 10px;
+  padding-top: 4px;
+  padding-right: 10px;
 }
 
 .social-icons a {
@@ -253,6 +255,13 @@ body {
   .hero-image-container {
     width: 90%;
     height: 400px;
+  }
+  .quote-card p {
+    font-size: 10px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
   }
 
   .social-media {
