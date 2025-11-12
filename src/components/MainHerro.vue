@@ -246,6 +246,7 @@ body {
 
   .description {
     max-width: 100%;
+    font-size: 17px !important;
   }
 
   .action-buttons {

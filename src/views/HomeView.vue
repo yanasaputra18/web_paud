@@ -46,6 +46,45 @@
         </div>
       </div>
     </section>
+    <section id="tentangKami">
+      <div class="profil">
+        <h2>
+          Profil TK <span>Mandiri</span> <br />
+          Tunggal Jaya
+        </h2>
+      </div>
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <!-- Kolom Gambar -->
+          <div class="col-md-5 text-center">
+            <img
+              src="../assets/KepalaSekolah.png"
+              alt="Kepala Sekolah"
+              class="img-fluid rounded-4 shadow-sm"
+            />
+          </div>
+
+          <!-- Kolom Teks -->
+          <div class="col-md-6 text_kepala">
+            <h4 class="fw-bold mb-3 sambutan">
+              Sambutan Kepala Sekolah TK Mandiri Tunggal Jaya
+            </h4>
+            <p class="text-secondary mb-2">
+              Sekolah adalah tempat mencetak penerus bangsa yang berkualitas dan
+              berprestasi di segala bidang yang dapat bersaing di dunia
+              internasional.
+            </p>
+            <p class="text-secondary mb-4">
+              Sekolah juga tempat anak-anak mendapatkan dukungan untuk
+              melengkapi pembelajarannya di sekolah.
+            </p>
+            <a href="#" class="btn btn-primary rounded-pill px-4 shadow-sm">
+              Baca Selanjutnya <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Icon watshap -->
     <a id="wa-float" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-whatsapp"></i>
@@ -95,6 +134,7 @@ body {
 /* Css watshap end */
 
 .section-kenapa {
+  margin-top: 50px !important;
   text-align: center;
   padding: 80px 20px;
 }
@@ -119,9 +159,13 @@ body {
   background: #fff;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 30px 20px;
+  height: 230px;
+}
+.card-feature p {
+  font-size: 15px !important;
 }
 
 .card-feature:hover {
@@ -146,12 +190,39 @@ body {
   font-size: 14px;
   margin: 0;
 }
+/* Tentang Kami Star */
+#tentangKami {
+  margin-top: 80px !important;
+}
+.profil h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.profil h2 span {
+  color: #2a4bff; /* biru seperti contoh */
+}
+.text-secondary {
+  font-size: 20px !important;
+}
+.sambutan {
+  font-size: 30px !important;
+}
+.text_kepala {
+  margin: 0 20px !important;
+}
+/* Tentang Kami End */
 /* Ukuran Mobile */
 @media (max-width: 576px) {
   .section-kenapa {
     padding: 0 !important;
   }
   .section-kenapa h2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .profil h2 {
     font-size: 24px;
     line-height: 1.4;
   }
@@ -167,6 +238,9 @@ body {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
     /* width: 150px;
     background-color: red; */
+  }
+  .card-feature p {
+    font-size: 12px !important;
   }
 
   .card-feature i {
@@ -184,5 +258,30 @@ body {
   .row {
     padding: 0 !important;
   }
+  /* Mobile tentang kami stard */
+  .text_kepala {
+    margin: 0 !important;
+  }
+  .container h4 {
+    text-align: center;
+  }
+
+  .container p {
+    text-align: justify;
+  }
+
+  .container a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .text-secondary {
+    font-size: 15px !important;
+  }
+  .sambutan {
+    margin-top: 20px;
+    font-size: 20px !important;
+  }
+  /* Mobile tentang kami end */
 }
 </style>
