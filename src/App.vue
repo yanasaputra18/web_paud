@@ -5,6 +5,7 @@
     <main class="main-content">
       <router-view />
     </main>
+    <ProgramKami />
     <!-- <Footer /> -->
   </div>
 </template>
@@ -12,6 +13,7 @@
 <script>
 import MainHerro from "./components/MainHerro.vue";
 import MainNavbar from "./components/MainNavbar.vue";
+import ProgramKami from "./components/ProgramKami.vue";
 // import Navbar from "./components/Navbar.vue";
 // import Footer from "./components/Footer.vue";
 
@@ -20,6 +22,7 @@ export default {
   components: {
     MainNavbar,
     MainHerro,
+    ProgramKami,
   },
 };
 </script>

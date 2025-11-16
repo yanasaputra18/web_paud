@@ -46,7 +46,7 @@
         </div>
       </div>
     </section>
-    <section id="tentangKami">
+    <section id="tentang">
       <div class="profil">
         <h2>
           Profil TK <span>Mandiri</span> <br />
@@ -78,7 +78,7 @@
               Sekolah juga tempat anak-anak mendapatkan dukungan untuk
               melengkapi pembelajarannya di sekolah.
             </p>
-            <a href="#" class="btn btn-primary rounded-pill px-4 shadow-sm">
+            <a href="#" class="btn rounded-pill px-4 shadow-sm">
               Baca Selanjutnya <i class="bi bi-arrow-right ms-2"></i>
             </a>
           </div>
@@ -144,9 +144,13 @@ body {
   font-size: 2rem;
   margin-bottom: 10px;
 }
+.btn {
+  background-color: #01c35f;
+  color: white;
+}
 
 .section-kenapa h2 span {
-  color: #2a4bff; /* biru seperti contoh */
+  color: #01c35f;
 }
 
 .section-kenapa p.subtext {
@@ -175,7 +179,7 @@ body {
 
 .card-feature i {
   font-size: 40px;
-  color: #2a4bff;
+  color: #01c35f;
   margin-bottom: 15px;
 }
 
@@ -201,7 +205,7 @@ body {
   text-align: center;
 }
 .profil h2 span {
-  color: #2a4bff; /* biru seperti contoh */
+  color: #01c35f;
 }
 .text-secondary {
   font-size: 20px !important;
@@ -223,6 +227,7 @@ body {
     line-height: 1.4;
   }
   .profil h2 {
+    margin-top: 3rem;
     font-size: 24px;
     line-height: 1.4;
   }
@@ -266,7 +271,7 @@ body {
     text-align: center;
   }
 
-  .container p {
+  .text-secondary {
     text-align: justify;
   }
 

@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">TK Mandiri</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -17,18 +18,28 @@
 
         <div class="collapse navbar-collapse gap-2" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
+            <!-- <a
+              v-for="(item, index) in navItems"
+              :key="index"
+              class="nav-link"
+              :class="{ active: activeIndex === index }"
+              :href="'#' + item.target"
+              @click.prevent="scrollToSection(item.target, index)"
+            >
+              {{ item.name }}
+            </a> -->
             <a
               v-for="(item, index) in navItems"
               :key="index"
-              href="#"
               class="nav-link"
               :class="{ active: activeIndex === index }"
-              @click.prevent="setActive(index)"
+              :href="'#' + item.target"
+              @click.prevent="handleMenuClick(item.target, index)"
             >
-              {{ item }}
+              {{ item.name }}
             </a>
           </div>
-          <button type="button" class="btn btn-primary kontak">Kontak</button>
+          <button type="button" class="btn btn-outline-success">Kontak</button>
         </div>
       </div>
     </nav>
@@ -36,23 +47,50 @@
 </template>
 
 <script>
+import { Collapse } from "bootstrap";
+
 export default {
   name: "MainNavbar",
   data() {
     return {
       activeIndex: 0,
       navItems: [
-        "Home",
-        "Tentang Kami",
-        "Program Kami",
-        "Staf Guru",
-        "Gallery",
+        { name: "Home", target: "home" },
+        { name: "Tentang Kami", target: "tentang" },
+        { name: "Program Kami", target: "program" },
+        { name: "Staf Guru", target: "staf" },
+        { name: "Gallery", target: "gallery" },
       ],
     };
   },
   methods: {
     setActive(index) {
       this.activeIndex = index;
+    },
+
+    scrollToSection(id, index) {
+      this.setActive(index);
+
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    },
+
+    closeNavbar() {
+      const navbar = document.getElementById("navbarNavAltMarkup");
+      const bsCollapse = new Collapse(navbar, {
+        toggle: false,
+      });
+      bsCollapse.hide();
+    },
+
+    handleMenuClick(id, index) {
+      this.scrollToSection(id, index);
+      this.closeNavbar();
     },
   },
 };
@@ -67,17 +105,13 @@ export default {
   padding: 30px 0;
 }
 
-.kontak {
-  border-radius: 20px;
-}
-
 /* Navbar aktif */
 .nav-link.active {
-  color: #007bff !important;
+  color: #01c35f !important;
 }
 
 /* Efek hover */
 .nav-link:hover {
-  color: #007bff !important;
+  color: #01c35f !important;
 }
 </style>
