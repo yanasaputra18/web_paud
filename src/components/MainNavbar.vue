@@ -58,7 +58,7 @@ export default {
         { name: "Home", target: "home" },
         { name: "Tentang Kami", target: "tentang" },
         { name: "Program Kami", target: "program" },
-        { name: "Staf Guru", target: "staf" },
+        { name: "Staf Guru", target: "Staff" },
         { name: "Gallery", target: "gallery" },
       ],
     };
