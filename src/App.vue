@@ -7,11 +7,15 @@
     </main>
     <ProgramKami />
     <StaffGuru />
+    <GaleryWall />
+    <CopyRight />
     <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
+import CopyRight from "./components/CopyRight.vue";
+import GaleryWall from "./components/GaleryWall.vue";
 import MainHerro from "./components/MainHerro.vue";
 import MainNavbar from "./components/MainNavbar.vue";
 import ProgramKami from "./components/ProgramKami.vue";
@@ -26,6 +30,8 @@ export default {
     MainHerro,
     ProgramKami,
     StaffGuru,
+    GaleryWall,
+    CopyRight,
   },
 };
 </script>

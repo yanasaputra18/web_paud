@@ -1,181 +1,238 @@
 <template>
   <section id="Staff">
-    <div class="container">
-      <h2 class="judul-besar">Staf <span class="highlight">Guru</span> Kami</h2>
-      <p class="subjudul mb-5">
-        Tenaga pendidik berpengalaman dan profesional.
-      </p>
+    <div class="container swiper">
+      <h2 class="title">
+        Staf Guru <br />
+        TK <span>Mandiri</span>
+        Tunggal Jaya
+      </h2>
+      <div class="card-wrapper swiper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="../assets/Ibu_Kepsek.png" class="card-image" />
+              <p class="badge">Kepala Sekolah</p>
+              <h2 class="card-title">Opih Nursopiah S.Pd</h2>
+            </a>
+          </li>
 
-      <div class="carousel-container">
-        <button class="carousel-btn prev">&#10094;</button>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="../assets/Staf/kecil (5).png" class="card-image" />
+              <p class="badge">Wali Kelas A</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+            </a>
+          </li>
 
-        <div class="carousel-wrapper" id="carousel">
-          <div class="guru-card" v-for="i in 5" :key="i">
-            <img src="../assets/ibu_kepsek.jpg" class="guru-photo" />
-            <h3 class="guru-nama">Nama Guru {{ i }}</h3>
-            <p class="guru-jabatan">Guru PAUD</p>
-          </div>
-        </div>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="../assets/Staf/kecil (4).png" class="card-image" />
+              <p class="badge">Wali Kelas B</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+            </a>
+          </li>
 
-        <button class="carousel-btn next">&#10095;</button>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="../assets/Staf/kecil (7).png" class="card-image" />
+              <p class="badge">Wali Kelas C</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+            </a>
+          </li>
+        </ul>
+
+        <!-- pagination & navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import { onMounted } from "vue";
+import Swiper from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default {
-  name: "StaffGuru",
+  mounted() {
+    new Swiper(".card-wrapper", {
+      loop: true,
+      spaceBetween: 30,
 
-  setup() {
-    onMounted(() => {
-      const carousel = document.getElementById("carousel");
-      const nextBtn = document.querySelector(".next");
-      const prevBtn = document.querySelector(".prev");
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
 
-      if (!carousel || !nextBtn || !prevBtn) return;
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 
-      // --- Next / Prev Button ---
-      nextBtn.addEventListener("click", () => {
-        carousel.scrollBy({ left: 300, behavior: "smooth" });
-      });
-
-      prevBtn.addEventListener("click", () => {
-        carousel.scrollBy({ left: -300, behavior: "smooth" });
-      });
-
-      // --- Swipe Gesture (Mobile) ---
-      let startX = 0;
-      let scrollLeft = 0;
-      let isDown = false;
-
-      carousel.addEventListener("touchstart", (e) => {
-        isDown = true;
-        startX = e.touches[0].pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
-      });
-
-      carousel.addEventListener("touchmove", (e) => {
-        if (!isDown) return;
-        const x = e.touches[0].pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 1.5;
-        carousel.scrollLeft = scrollLeft - walk;
-      });
-
-      carousel.addEventListener("touchend", () => {
-        isDown = false;
-      });
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
     });
   },
 };
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 70px;
-  background-color: #f0efff;
-  height: 500px;
-}
-.guru-section {
-  text-align: center;
-  padding: 50px 20px;
-  background: #f5f7ff;
+/* ============================= */
+/* GLOBAL RESET (AMAN) */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.judul-besar {
+.container .title {
   text-align: center;
-  font-size: 32px;
-  font-weight: 700;
 }
 
-.highlight {
+.container h2 {
+  line-height: 1.4;
+  font-weight: bold;
+}
+.container h2 span {
   color: #01c35f;
 }
 
-.subjudul {
-  text-align: center;
-  opacity: 0.7;
-  margin-bottom: 30px;
-}
+/* ❌ body TIDAK BOLEH di scoped */
+/* body dipindahkan ke global/App.vue */
 
-.carousel-container {
-  position: relative;
-  width: 100%;
+/* ============================= */
+/* CARD STYLE */
+/* ============================= */
+.card-wrapper {
+  position: relative; /* WAJIB agar navigation tidak kabur */
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
   overflow: hidden;
 }
 
-.carousel-wrapper {
-  display: flex;
-  gap: 20px;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+.card-list .card-item {
+  list-style: none;
 }
 
-.carousel-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.guru-card {
-  min-width: 280px;
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
   background: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  padding: 18px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
 }
 
-.guru-photo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
 }
 
-.guru-nama {
-  font-size: 18px;
-  font-weight: 700;
+.card-list .card-item .card-link:hover {
+  border-color: #5372f0;
 }
 
-.guru-jabatan {
-  font-size: 14px;
-  opacity: 0.7;
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  border: none;
-  background: white;
-  padding: 10px 14px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  z-index: 10;
+/* ❌ FIX TYPO: bagde -> badge */
+.card-list .card-link .badge {
+  color: #5372f0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 10px;
 }
 
-.prev {
-  left: 10px;
-}
-.next {
-  right: 10px;
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 400;
 }
 
+/* ============================= */
+/* SWIPER PAGINATION */
+/* ============================= */
+.card-wrapper .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: #5372f0;
+  opacity: 0.5; /* ❌ FIX: 0,5 -> 0.5 */
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* ============================= */
+/* SWIPER NAVIGATION (FIX TOTAL) */
+/* ============================= */
+
+/* ❌ swiper-slide-button TIDAK ADA */
+/* ✅ pakai class resmi Swiper */
+
+.card-wrapper .swiper-button-next,
+.card-wrapper .swiper-button-prev {
+  color: #5372f0;
+  width: 40px;
+  height: 40px;
+}
+
+/* icon panah Swiper ada di ::after */
+.card-wrapper .swiper-button-next::after,
+.card-wrapper .swiper-button-prev::after {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-wrapper .swiper-button-next:hover,
+.card-wrapper .swiper-button-prev:hover {
+  color: #1e40af;
+}
+
+/* ============================= */
 /* MOBILE */
-@media (max-width: 576px) {
-  .guru-card {
-    min-width: 85%;
+/* ============================= */
+@media screen and (max-width: 768px) {
+  .container .title {
+    text-align: center;
   }
 
-  .carousel-btn {
-    padding: 7px 10px;
+  .container h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: bold;
+  }
+  .container h2 span {
+    color: #01c35f;
+  }
+
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  /* mobile swipe saja */
+  .card-wrapper .swiper-button-next,
+  .card-wrapper .swiper-button-prev {
+    display: none;
   }
 }
 </style>
