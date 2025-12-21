@@ -1,7 +1,7 @@
 <template>
   <section id="Staff">
     <div class="container swiper">
-      <h2 class="title">
+      <h2 class="title" data-aos="fade-up">
         Staf Guru <br />
         TK <span>Mandiri</span>
         Tunggal Jaya
@@ -12,7 +12,7 @@
             <a href="#" class="card-link">
               <img src="../assets/Ibu_Kepsek.png" class="card-image" />
               <p class="badge">Kepala Sekolah</p>
-              <h2 class="card-title">Opih Nursopiah S.Pd</h2>
+              <h2 class="card-title">Bu Opih Nursopiah S.Pd</h2>
             </a>
           </li>
 
@@ -20,7 +20,7 @@
             <a href="#" class="card-link">
               <img src="../assets/Staf/kecil (5).png" class="card-image" />
               <p class="badge">Wali Kelas A</p>
-              <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+              <h2 class="card-title">Bu Zahra Nursyifa S.Pd</h2>
             </a>
           </li>
 
@@ -28,7 +28,7 @@
             <a href="#" class="card-link">
               <img src="../assets/Staf/kecil (4).png" class="card-image" />
               <p class="badge">Wali Kelas B</p>
-              <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+              <h2 class="card-title">Bu Annisa Rahma S.Pd</h2>
             </a>
           </li>
 
@@ -36,7 +36,7 @@
             <a href="#" class="card-link">
               <img src="../assets/Staf/kecil (7).png" class="card-image" />
               <p class="badge">Wali Kelas C</p>
-              <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+              <h2 class="card-title">Bu Fatimah Zahra S.Pd</h2>
             </a>
           </li>
         </ul>
@@ -51,16 +51,23 @@
 </template>
 
 <script>
-import Swiper from "swiper";
+import Swiper, { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default {
   mounted() {
+    Swiper.use([Autoplay, Navigation, Pagination]);
+
     new Swiper(".card-wrapper", {
       loop: true,
       spaceBetween: 30,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
 
       pagination: {
         el: ".swiper-pagination",

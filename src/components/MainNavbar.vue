@@ -39,7 +39,13 @@
               {{ item.name }}
             </a>
           </div>
-          <button type="button" class="btn btn-outline-success">Kontak</button>
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            @click="openWhatsApp"
+          >
+            Kontak
+          </button>
         </div>
       </div>
     </nav>
@@ -90,6 +96,16 @@ export default {
 
     handleMenuClick(id, index) {
       this.scrollToSection(id, index);
+      this.closeNavbar();
+    },
+
+    // Tambahkan untuk button kontak
+    openWhatsApp() {
+      const phone = "6281511408837";
+      const message = "Hallo Admin, Saya ingin bertanya tentang TK Mandiri";
+
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
       this.closeNavbar();
     },
   },

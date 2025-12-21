@@ -12,6 +12,7 @@
         :key="index"
         :href="img.full"
         class="gallery-item"
+        data-aos="flip-left"
       >
         <img :src="img.thumb" :alt="img.alt" />
       </a>

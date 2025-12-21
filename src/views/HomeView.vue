@@ -2,7 +2,7 @@
   <div class="container">
     <MainHerro />
     <section class="section-kenapa">
-      <h2>
+      <h2 data-aos="fade-down">
         Kenapa Harus <span>TK Mandiri</span> <br />
         Tunggal Jaya
       </h2>
@@ -13,7 +13,7 @@
 
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-3 col-6">
+          <div class="col-md-3 col-6" data-aos="flip-left">
             <div class="card-feature">
               <i class="bi bi-laptop"></i>
               <h5>Fasilitas Lengkap</h5>
@@ -21,20 +21,20 @@
             </div>
           </div>
           <div class="col-md-3 col-6">
-            <div class="card-feature">
+            <div class="card-feature" data-aos="flip-left">
               <i class="bi bi-building"></i>
               <h5>Lingkungan Nyaman</h5>
               <p>Berada di lingkungan yang nyaman dan asri</p>
             </div>
           </div>
-          <div class="col-md-3 col-6">
+          <div class="col-md-3 col-6" data-aos="flip-right">
             <div class="card-feature">
               <i class="bi bi-people"></i>
               <h5>Pengajar Kompeten</h5>
               <p>Guru terbaik dengan pengalaman</p>
             </div>
           </div>
-          <div class="col-md-3 col-6">
+          <div class="col-md-3 col-6" data-aos="flip-right">
             <div class="card-feature">
               <i class="bi bi-briefcase"></i>
               <h5>Kerja Sama Luas</h5>
@@ -48,7 +48,7 @@
     </section>
     <section id="tentang">
       <div class="profil">
-        <h2>
+        <h2 data-aos="fade-up">
           Profil TK <span>Mandiri</span> <br />
           Tunggal Jaya
         </h2>
@@ -56,7 +56,7 @@
       <div class="container py-5">
         <div class="row align-items-center g-4">
           <!-- Kolom Gambar -->
-          <div class="col-md-5 text-center">
+          <div class="col-md-5 text-center" data-aos="fade-up-right">
             <img
               src="../assets/KepalaSekolah.png"
               alt="Kepala Sekolah"

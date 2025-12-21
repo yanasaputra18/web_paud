@@ -1,13 +1,18 @@
 <template>
   <div class="container">
     <section id="program">
-      <h2 class="title">
+      <h2 class="title" data-aos="fade-up">
         Program Unggulan <br />
         TK <span>Mandiri</span>
         Tunggal Jaya
       </h2>
       <div class="row mt-5">
-        <div class="col-6 col-md-6 col-lg-3">
+        <div
+          class="col-6 col-md-6 col-lg-3"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="program-card bg-kognitif">
             <div class="program-icon">
               <i class="fas fa-lightbulb"></i> <i class="fas fa-book-open"></i>
@@ -17,7 +22,12 @@
         </div>
 
         <div class="col-6 col-md-6 col-lg-3">
-          <div class="program-card bg-bahasa">
+          <div
+            class="program-card bg-bahasa"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="program-icon">
               <i class="fas fa-comments"></i> <i class="fas fa-pencil-alt"></i>
             </div>
@@ -25,7 +35,12 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
+        <div
+          class="col-6 col-md-6 col-lg-3"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="program-card bg-fisik">
             <div class="program-icon">
               <i class="fas fa-running"></i> <i class="fas fa-hands"></i>
@@ -36,7 +51,12 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
+        <div
+          class="col-6 col-md-6 col-lg-3"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="program-card bg-sosial">
             <div class="program-icon">
               <i class="fas fa-handshake"></i> <i class="fas fa-heart"></i>
@@ -46,9 +66,15 @@
         </div>
       </div>
 
-      <h2 class="program1">Program <span>Ekstrakurikuler</span></h2>
+      <h2 class="program1" data-aos="fade-up">
+        Program <span>Ekstrakurikuler</span>
+      </h2>
       <div class="row mt-4">
-        <div class="col-6 col-md-6 col-lg-3">
+        <div
+          class="col-6 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <div class="program-card bg-inggris">
             <div class="program-icon">
               <i class="fas fa-globe"></i> <i class="fas fa-microphone-alt"></i>
@@ -57,7 +83,11 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
+        <div
+          class="col-6 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <div class="program-card bg-art">
             <div class="program-icon">
               <i class="fas fa-paint-brush"></i> <i class="fas fa-palette"></i>
@@ -68,7 +98,11 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
+        <div
+          class="col-6 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <div class="program-card bg-cooking">
             <div class="program-icon">
               <i class="fas fa-utensils"></i> <i class="fas fa-seedling"></i>
@@ -77,7 +111,11 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-6 col-lg-3">
+        <div
+          class="col-6 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <div class="program-card bg-karakter">
             <div class="program-icon">
               <i class="bi bi-chat-square-heart-fill"></i>
