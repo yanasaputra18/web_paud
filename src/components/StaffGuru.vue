@@ -94,11 +94,6 @@ export default {
 /* ============================= */
 /* GLOBAL RESET (AMAN) */
 /* ============================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .container .title {
   text-align: center;
