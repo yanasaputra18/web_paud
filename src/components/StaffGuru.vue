@@ -230,7 +230,21 @@ export default {
   .card-wrapper {
     margin: 0 10px 25px;
   }
-
+  .card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+  }
+  .card-list {
+    margin: 0;
+    padding: 0;
+  }
   /* mobile swipe saja */
   .card-wrapper .swiper-button-next,
   .card-wrapper .swiper-button-prev {

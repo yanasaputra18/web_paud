@@ -112,5 +112,8 @@
   .alamat h4 {
     margin-top: 20px;
   }
+  .main .alamat {
+    margin: auto;
+  }
 }
 </style>

@@ -56,9 +56,9 @@
       <div class="container py-5">
         <div class="row align-items-center g-4">
           <!-- Kolom Gambar -->
-          <div class="col-md-5 text-center" data-aos="fade-up-right">
+          <div class="col-md-5 text-center kepsek" data-aos="fade-up-right">
             <img
-              src="../assets/KepalaSekolah.png"
+              src="../assets/Ibu_Kepsek.png"
               alt="Kepala Sekolah"
               class="img-fluid rounded-4 shadow-sm"
             />
@@ -76,11 +76,14 @@
             </p>
             <p class="text-secondary mb-4">
               Sekolah juga tempat anak-anak mendapatkan dukungan untuk
-              melengkapi pembelajarannya di sekolah.
+              melengkapi pembelajarannya di sekolah...
             </p>
-            <a href="#" class="btn rounded-pill px-4 shadow-sm">
+            <router-link
+              :to="{ path: '/about', hash: '#about' }"
+              class="btn rounded-pill px-4 shadow-sm"
+            >
               Baca Selanjutnya <i class="bi bi-arrow-right ms-2"></i>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -262,6 +265,10 @@ body {
   }
   .row {
     padding: 0 !important;
+  }
+  .kepsek img {
+    width: 300px;
+    height: 230px;
   }
   /* Mobile tentang kami stard */
   .text_kepala {

@@ -181,7 +181,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  background-color: #01c35f; /* Warna ungu/biru */
+  background-color: #01c35f;
   color: white;
 }
 
