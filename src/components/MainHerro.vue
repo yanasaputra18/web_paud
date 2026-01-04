@@ -188,6 +188,7 @@ body {
 .btn:hover {
   background-color: white;
   border: solid #01c35f;
+  color: #01c35f;
 }
 
 .btn.secondary {
