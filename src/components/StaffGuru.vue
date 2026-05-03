@@ -1,85 +1,150 @@
 <template>
-  <section id="Staff">
-    <div class="container swiper">
-      <h2 class="title" data-aos="fade-up">
-        Staf Guru <br />
-        TK <span>Mandiri</span>
-        Tunggal Jaya
-      </h2>
-      <div class="card-wrapper swiper">
-        <ul class="card-list swiper-wrapper">
-          <li class="card-item swiper-slide">
-            <a href="#" class="card-link">
-              <img src="../assets/Ibu_Kepsek.png" class="card-image" />
-              <p class="badge">Kepala Sekolah</p>
-              <h2 class="card-title">Bu Opih Nursopiah S.Pd</h2>
-            </a>
-          </li>
+  <section id="staff-section" class="py-5">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-uppercase fw-bold text-primary tracking-widest mb-2">Our Dedicated Team</h6>
+        <h2 class="display-5 fw-bold title-text mb-3">
+          Staf Guru <br />
+          TK <span class="highlight">Mandiri</span> Tunggal Jaya
+        </h2>
+        <div class="header-line mx-auto"></div>
+      </div>
 
-          <li class="card-item swiper-slide">
-            <a href="#" class="card-link">
-              <img src="../assets/Staf/kecil (5).png" class="card-image" />
-              <p class="badge">Wali Kelas A</p>
-              <h2 class="card-title">Bu Zahra Nursyifa S.Pd</h2>
-            </a>
-          </li>
+      <!-- Carousel Container -->
+      <div class="swiper-container-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <!-- Staff Item 1 -->
+            <li class="card-item swiper-slide">
+              <div class="teacher-card">
+                <div class="card-image-wrapper">
+                  <img src="../assets/Ibu_Kepsek.png" class="teacher-img" alt="Bu Opih Nursopiah" />
+                  <div class="card-overlay"></div>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+                <div class="teacher-info">
+                  <span class="role-badge">Kepala Sekolah</span>
+                  <h4 class="teacher-name">Bu Opih Nursopiah S.Pd</h4>
+                  <div class="info-line"></div>
+                </div>
+              </div>
+            </li>
 
-          <li class="card-item swiper-slide">
-            <a href="#" class="card-link">
-              <img src="../assets/Staf/kecil (4).png" class="card-image" />
-              <p class="badge">Wali Kelas B</p>
-              <h2 class="card-title">Bu Annisa Rahma S.Pd</h2>
-            </a>
-          </li>
+            <!-- Staff Item 2 -->
+            <li class="card-item swiper-slide">
+              <div class="teacher-card">
+                <div class="card-image-wrapper">
+                  <img src="../assets/Staf/kecil (5).png" class="teacher-img" alt="Bu Zahra Nursyifa" />
+                  <div class="card-overlay"></div>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+                <div class="teacher-info">
+                  <span class="role-badge badge-green">Wali Kelas A</span>
+                  <h4 class="teacher-name">Bu Zahra Nursyifa S.Pd</h4>
+                  <div class="info-line"></div>
+                </div>
+              </div>
+            </li>
 
-          <li class="card-item swiper-slide">
-            <a href="#" class="card-link">
-              <img src="../assets/Staf/kecil (7).png" class="card-image" />
-              <p class="badge">Wali Kelas C</p>
-              <h2 class="card-title">Bu Fatimah Zahra S.Pd</h2>
-            </a>
-          </li>
-        </ul>
+            <!-- Staff Item 3 -->
+            <li class="card-item swiper-slide">
+              <div class="teacher-card">
+                <div class="card-image-wrapper">
+                  <img src="../assets/Staf/kecil (4).png" class="teacher-img" alt="Bu Annisa Rahma" />
+                  <div class="card-overlay"></div>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+                <div class="teacher-info">
+                  <span class="role-badge badge-blue">Wali Kelas B</span>
+                  <h4 class="teacher-name">Bu Annisa Rahma S.Pd</h4>
+                  <div class="info-line"></div>
+                </div>
+              </div>
+            </li>
 
-        <!-- pagination & navigation -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            <!-- Staff Item 4 -->
+            <li class="card-item swiper-slide">
+              <div class="teacher-card">
+                <div class="card-image-wrapper">
+                  <img src="../assets/Staf/kecil (7).png" class="teacher-img" alt="Bu Fatimah Zahra" />
+                  <div class="card-overlay"></div>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+                </div>
+                <div class="teacher-info">
+                  <span class="role-badge badge-purple">Wali Kelas C</span>
+                  <h4 class="teacher-name">Bu Fatimah Zahra S.Pd</h4>
+                  <div class="info-line"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination custom-pagination"></div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-button prev-btn swiper-button-prev"></div>
+        <div class="nav-button next-btn swiper-button-next"></div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Swiper, { Autoplay, Navigation, Pagination } from "swiper";
+// Swiper v12 uses modules from 'swiper/modules'
+import Swiper from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default {
+  name: 'StaffGuru',
   mounted() {
-    Swiper.use([Autoplay, Navigation, Pagination]);
-
     new Swiper(".card-wrapper", {
+      // Register modules
+      modules: [Autoplay, Navigation, Pagination],
+      
       loop: true,
       spaceBetween: 30,
-
+      grabCursor: true,
+      
+      // Autoplay configuration
       autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
-
+      
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
         dynamicBullets: true,
       },
-
+      
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-
+      
       breakpoints: {
         0: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
@@ -91,164 +156,227 @@ export default {
 </script>
 
 <style scoped>
-/* ============================= */
-/* GLOBAL RESET (AMAN) */
-/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-.container .title {
-  text-align: center;
-}
-
-.container h2 {
-  line-height: 1.4;
-  font-weight: bold;
-}
-.container h2 span {
-  color: #01c35f;
-}
-
-/* ❌ body TIDAK BOLEH di scoped */
-/* body dipindahkan ke global/App.vue */
-
-/* ============================= */
-/* CARD STYLE */
-/* ============================= */
-.card-wrapper {
-  position: relative; /* WAJIB agar navigation tidak kabur */
-  max-width: 1100px;
-  margin: 0 60px 35px;
-  padding: 20px 10px;
+#staff-section {
+  background-color: #f8fafc;
+  font-family: 'Poppins', sans-serif;
   overflow: hidden;
 }
 
-.card-list .card-item {
-  list-style: none;
+.title-text {
+  color: #1e293b;
+  line-height: 1.2;
 }
 
-.card-list .card-item .card-link {
-  user-select: none;
-  display: block;
-  background: #fff;
-  padding: 18px;
-  text-decoration: none;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-  transition: 0.2s ease;
+.highlight {
+  color: #01c35f;
 }
 
-.card-list .card-item .card-link:active {
-  cursor: grabbing;
+.header-line {
+  width: 80px;
+  height: 4px;
+  background-color: #01c35f;
+  border-radius: 2px;
 }
 
-.card-list .card-item .card-link:hover {
-  border-color: #5372f0;
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
-.card-list .card-link .card-image {
+/* Swiper Container Adjustments */
+.swiper-container-wrapper {
+  position: relative;
+  padding: 0 50px;
+}
+
+.card-wrapper {
+  padding: 20px 0 60px;
+}
+
+/* Teacher Card Design */
+.teacher-card {
+  background: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.card-image-wrapper {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+
+.teacher-img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* ❌ FIX TYPO: bagde -> badge */
-.card-list .card-link .badge {
-  color: #5372f0;
-  padding: 8px 16px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin: 16px 0 18px;
-  background: #dde4ff;
-  width: fit-content;
-  border-radius: 10px;
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
 }
 
-.card-list .card-link .card-title {
-  font-size: 1.19rem;
-  color: #000;
-  font-weight: 400;
+.social-links {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 25px;
+  transition: all 0.4s ease;
+  z-index: 2;
 }
 
-/* ============================= */
-/* SWIPER PAGINATION */
-/* ============================= */
-.card-wrapper .swiper-pagination-bullet {
-  width: 13px;
-  height: 13px;
-  background: #5372f0;
-  opacity: 0.5; /* ❌ FIX: 0,5 -> 0.5 */
+.social-links a {
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
-.card-wrapper .swiper-pagination-bullet-active {
+.social-links a:hover {
+  background: #01c35f;
+  transform: translateY(-5px);
+}
+
+.teacher-card:hover .teacher-img {
+  transform: scale(1.1);
+}
+
+.teacher-card:hover .social-links {
+  bottom: 0;
+}
+
+.teacher-card:hover .card-overlay {
   opacity: 1;
 }
 
-/* ============================= */
-/* SWIPER NAVIGATION (FIX TOTAL) */
-/* ============================= */
-
-/* ❌ swiper-slide-button TIDAK ADA */
-/* ✅ pakai class resmi Swiper */
-
-.card-wrapper .swiper-button-next,
-.card-wrapper .swiper-button-prev {
-  color: #5372f0;
-  width: 40px;
-  height: 40px;
+/* Info Section */
+.teacher-info {
+  padding: 30px 25px;
+  text-align: center;
+  background: #ffffff;
 }
 
-/* icon panah Swiper ada di ::after */
-.card-wrapper .swiper-button-next::after,
-.card-wrapper .swiper-button-prev::after {
-  font-size: 22px;
+.role-badge {
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 100px;
+  background: rgba(1, 195, 95, 0.1);
+  color: #01c35f;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.badge-green { background: rgba(34, 197, 94, 0.1); color: #22c55e; }
+.badge-blue { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+.badge-purple { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+
+.teacher-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0;
+}
+
+.info-line {
+  width: 40px;
+  height: 3px;
+  background-color: #01c35f;
+  margin: 15px auto 0;
+  border-radius: 2px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.teacher-card:hover .info-line {
+  width: 80px;
+  opacity: 1;
+}
+
+/* Swiper Navigation & Pagination */
+.nav-button {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #1e293b !important;
+  transition: all 0.3s ease;
+}
+
+.nav-button::after {
+  font-size: 1.2rem !important;
   font-weight: bold;
 }
 
-.card-wrapper .swiper-button-next:hover,
-.card-wrapper .swiper-button-prev:hover {
-  color: #1e40af;
+.nav-button:hover {
+  background: #01c35f;
+  color: #ffffff !important;
 }
 
-/* ============================= */
-/* MOBILE */
-/* ============================= */
-@media screen and (max-width: 768px) {
-  .container .title {
-    text-align: center;
-  }
+.prev-btn { left: 0 !important; }
+.next-btn { right: 0 !important; }
 
-  .container h2 {
-    font-size: 24px;
-    line-height: 1.4;
-    font-weight: bold;
-  }
-  .container h2 span {
-    color: #01c35f;
-  }
+.custom-pagination {
+  bottom: 0 !important;
+}
 
-  .card-wrapper {
-    margin: 0 10px 25px;
+.custom-pagination :deep(.swiper-pagination-bullet) {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  opacity: 1;
+}
+
+.custom-pagination :deep(.swiper-pagination-bullet-active) {
+  width: 25px;
+  border-radius: 5px;
+  background: #01c35f;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .swiper-container-wrapper {
+    padding: 0 20px;
   }
-  .card-list .card-item .card-link {
-    user-select: none;
-    display: block;
-    background: #fff;
-    padding: 18px;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    transition: 0.2s ease;
-  }
-  .card-list {
-    margin: 0;
-    padding: 0;
-  }
-  /* mobile swipe saja */
-  .card-wrapper .swiper-button-next,
-  .card-wrapper .swiper-button-prev {
+  .nav-button {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+  .teacher-info {
+    padding: 25px 20px;
+  }
+  .teacher-name {
+    font-size: 1.1rem;
   }
 }
 </style>
