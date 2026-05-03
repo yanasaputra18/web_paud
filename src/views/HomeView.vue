@@ -100,7 +100,7 @@ export default {
   mounted() {
     const el = document.getElementById("wa-float");
     if (el) {
-      const phone = "6281511408837";
+      const phone = "6281349972893";
       const msg = "Halo ibu, saya mau bertanya. Tentang TK Mandiri";
       el.href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
     } else {
