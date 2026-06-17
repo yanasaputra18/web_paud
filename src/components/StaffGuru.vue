@@ -1,6 +1,6 @@
 <template>
   <section id="staff-section" class="py-5">
-    <div class="container">
+    <div class="container" id="staff">
       <!-- Section Header -->
       <div class="text-center mb-5" data-aos="fade-up">
         <h6 class="text-uppercase fw-bold text-primary tracking-widest mb-2">Our Dedicated Team</h6>
@@ -101,8 +101,7 @@
         </div>
 
         <!-- Navigation Buttons -->
-        <div class="nav-button prev-btn swiper-button-prev"></div>
-        <div class="nav-button next-btn swiper-button-next"></div>
+        
       </div>
     </div>
   </section>
@@ -332,6 +331,10 @@ export default {
   font-size: 1.2rem !important;
   font-weight: bold;
 }
+/* .swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px; 
+} */
 
 .nav-button:hover {
   background: #01c35f;
