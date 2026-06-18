@@ -3,7 +3,7 @@
     <div class="container" id="staff">
       <!-- Section Header -->
       <div class="text-center mb-5" data-aos="fade-up">
-        <h6 class="text-uppercase fw-bold text-primary tracking-widest mb-2">Our Dedicated Team</h6>
+        <h6 class="text-uppercase fw-bold text-primary tracking-widest mb-2">Tim Kami yang Berdedikasi</h6>
         <h2 class="display-5 fw-bold title-text mb-3">
           Staf Guru <br />
           TK <span class="highlight">Mandiri</span> Tunggal Jaya

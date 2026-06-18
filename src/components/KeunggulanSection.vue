@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Section Header -->
       <div class="text-center mb-5" data-aos="fade-down">
-        <h6 class="text-uppercase fw-bold text-primary tracking-widest mb-2">Why Choose Us</h6>
+        <h6 class="text-uppercase fw-bold text-primary tracking-widest mb-2">Mengapa Memilih Kami?</h6>
         <h2 class="display-5 fw-bold title-text mb-3">
           Kenapa Harus <span class="highlight">TK Mandiri</span> <br />
           Tunggal Jaya

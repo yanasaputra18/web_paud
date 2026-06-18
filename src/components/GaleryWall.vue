@@ -4,7 +4,7 @@
       <!-- Section Header -->
       <div class="text-center mb-5" data-aos="fade-up">
         <h6 class="text-uppercase fw-bold text-primary tracking-widest mb-2">
-          Our Moments
+          Momen Kita
         </h6>
         <h2 class="display-5 fw-bold title-text mb-3">
           Gallery Kegiatan <br />

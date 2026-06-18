@@ -6,7 +6,8 @@
         <a href="#home" class="navbar-brand" @click.prevent="handleMenuClick('home', 0)">
           <div class="brand-content">
             <div class="brand-icon">
-              <i class="bi bi-mortarboard-fill"></i>
+              <!-- <i class="bi bi-mortarboard-fill"></i> -->
+               <img src="../assets/logo.jpeg" alt="TK Mandiri Logo" class="brand-logo">
             </div>
             <div class="brand-text">
               <span class="brand-name">TK <span class="highlight">Mandiri</span></span>
@@ -195,15 +196,21 @@ export default {
 .brand-icon {
   width: 45px;
   height: 45px;
-  background: linear-gradient(135deg, #01c35f, #00e676);
+  background: white;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   font-size: 1.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(1, 195, 95, 0.3);
+  box-shadow: 0 4px 10px rgba(1, 195, 95, 0.3);
+}
+
+.brand-logo {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 8%;
 }
 
 .navbar-brand:hover .brand-icon {
