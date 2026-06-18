@@ -64,7 +64,43 @@ Carousel staff guru dengan:
 - Social media links
 - Autoplay dan navigation
 
-#### 6. **GaleryWall.vue**
+#### 6. **BeritaSection.vue** ✨ (Baru)
+Section "Kabar Terbaru TK Mandiri Tunggal Jaya" dengan:
+- Header konsisten (subtitle, title highlight, divider, subtext)
+- Layout **Featured + List**: 1 card besar (kiri) + 4 card horizontal (kanan)
+- Responsive: 2 kolom → 1 kolom (tablet) → stack penuh (mobile)
+- Category badge sistem dengan warna per kategori
+- Hover effects: zoom image, translateY, border glow, title color change
+- Accent line animasi dari bawah card saat hover
+- Shimmer effect pada tombol "Lihat Semua Berita"
+- AOS animations: fade-right (featured), fade-left (list cards)
+- Button "Lihat Semua Berita" dengan shimmer & lift effect
+
+**Props:** Tidak ada (menggunakan data internal)
+
+**Data:**
+```javascript
+beritaList: [
+  { title, excerpt, date, author, category, badgeClass, image }
+]
+```
+
+**Badge Categories:**
+- `badge--kegiatan` → Green gradient (#01c35f → #00e676)
+- `badge--pengumuman` → Blue gradient (#3b82f6 → #2563eb)
+- `badge--prestasi` → Orange gradient (#f59e0b → #d97706)
+- `badge--pendaftaran` → Cyan gradient (#06b6d4 → #0891b2)
+
+**Dummy Data (5 berita):**
+1. Perayaan Hari Anak Nasional 2026 — [Featured] Kegiatan
+2. Pendaftaran Siswa Baru TA 2026/2027 Dibuka — Info Pendaftaran
+3. Juara 1 Lomba Mewarnai Tingkat Kecamatan — Prestasi
+4. Kunjungan Edukatif ke Kebun Binatang Mini — Kegiatan
+5. Workshop Parenting: Mendidik Anak di Era Digital — Pengumuman
+
+**Posisi di App.vue:** Antara `StaffGuru` dan `GaleryWall`
+
+#### 7. **GaleryWall.vue**
 Gallery foto kegiatan sekolah
 
 #### 7. **MainNavbar.vue**

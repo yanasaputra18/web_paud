@@ -1,19 +1,23 @@
 <template>
   <div>
     <MainNavbar />
-    <MainHerro />
+    <MainHerro v-if="$route.name !== 'berita-detail'" />
     <main class="main-content">
       <router-view />
     </main>
-    <ProgramKami />
-    <StaffGuru />
-    <GaleryWall />
+    <template v-if="$route.name !== 'berita-detail'">
+      <ProgramKami />
+      <StaffGuru />
+      <BeritaSection />
+      <GaleryWall />
+    </template>
     <CopyRight />
     <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
+import BeritaSection from "./components/BeritaSection.vue";
 import CopyRight from "./components/CopyRight.vue";
 import GaleryWall from "./components/GaleryWall.vue";
 import MainHerro from "./components/MainHerro.vue";
@@ -30,6 +34,7 @@ export default {
     MainHerro,
     ProgramKami,
     StaffGuru,
+    BeritaSection,
     GaleryWall,
     CopyRight,
   },
